@@ -20,16 +20,15 @@ h1, h2, h3, h4, h5, h6 {
 header {
 	display: flex;
 	align-items: center;
-	height: 15%;
 }
 
 h1 {
-	width: 50%;
+	flex-basis: 45%;
 	text-align: center;
 }
 
 nav {
-	width: 50%;
+	flex-basis: 55%;
 }
 
 #main-menu {
@@ -50,9 +49,9 @@ main {
 }
 
 article {
-	width: 75%;
+	flex-basis: 75%;
 }
 
 aside {
-	width: 25%;
+	flex-basis: 25%;
 }
