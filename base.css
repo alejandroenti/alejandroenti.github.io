@@ -55,3 +55,17 @@ article {
 aside {
 	flex-basis: 25%;
 }
+
+@media (max-width: 800px){
+	main {
+		flex-direction: column;
+	}
+	
+	article {
+		flex-basis: 100%;
+	}
+	
+	aside {
+		flex-basis: 100%;
+	}
+}
