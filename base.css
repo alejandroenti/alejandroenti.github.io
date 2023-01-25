@@ -1,3 +1,9 @@
+html {
+	font-family: 'Ubuntu', sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
 body {
 	padding: 0;
 	margin: 0;
@@ -5,8 +11,10 @@ body {
 
 header, h1, nav, main, article, aside, footer {
 	border: 1px solid black;
-	padding: 0;
-	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Ubuntu Condensed', sans-serif;
 }
 
 header {
@@ -28,6 +36,7 @@ nav {
 	list-style: none;
 	display: flex;
 	padding: 0;
+	margin: 0 30px;
 	justify-content: space-between;
 }
 
