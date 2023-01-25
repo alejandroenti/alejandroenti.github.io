@@ -12,7 +12,7 @@ Aquí almacenaremos la página web estática de la asignatura así como algunos 
 - Para ***BOLD ITALIC*** tres astericos.
 - Guión seguido de espacio para hacer un item de lista.
 
-## Ejemplos de listas de tareas (tasks)
+## Ejemplo de lista de tareas (tasks)
 
 - [ ] Aprender HTML
 - [ ] Aprender CSS
