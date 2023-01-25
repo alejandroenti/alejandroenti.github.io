@@ -6,3 +6,7 @@ Además, vamos a aprovechar para hablar de Markdown.
 
 Aquí almacenaremos la página web estática de la asignatura así como algunos ejemplos de Markdown, CSS, JavaScript, etc.
 
+Dos **astericos** significa BOLD.
+Un *astericos* significa ITALIC.
+Un _guión_bajo_ significa también ITALIC.
+
