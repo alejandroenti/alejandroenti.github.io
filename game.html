@@ -7,7 +7,11 @@
 		<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&family=Ubuntu:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="base.css"/>
 		<script>
-			fetch("https://alejandroenti.github.io/game.json").then(response => response.json()).then(data => console.log(data));
+			function game (data) {
+				console.log(data.rooms[0].name);
+			}
+		
+			fetch("https://alejandroenti.github.io/game.json").then(response => response.json()).then(data => game(data);
 		</script>
 	</head>
 	<body>
