@@ -6,13 +6,6 @@
 			"description": "El parking que no puedes usar",
 			"items": ["piedra", "bicicleta"],
 			"doors": ["principal", "salida"]
-		},
-		{
-			"id": "",
-			"name": "",
-			"description": "",
-			"items": [],
-			"doors": []
 		}
 	],
 	"items": [
