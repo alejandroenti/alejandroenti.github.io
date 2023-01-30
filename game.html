@@ -12,6 +12,12 @@
 			let game_data;
 			let current_room = 0;
 			let items_picked = [];
+			let command = [];
+			
+			function execute_command () {
+				command = document.getElementById("commands").value.split(" ");
+				console.log(command);
+			}
 		
 			function game (data) {
 				game_data = data;
@@ -43,7 +49,7 @@
 					<div id="terminal">
 					</div>
 					<input type="text" name="commands" id="commands"/>
-					<input type="submit" value="Ejecutar" id="submit-command" />
+					<input type="submit" value="Ejecutar" id="submit-command" onclick="execute_command(); return false;"/>
 				</form>
 			</article>
 			<aside>

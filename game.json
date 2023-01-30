@@ -6,9 +6,8 @@
 			"description": "El parking que no puedes usar",
 			"items": ["piedra", "bicicleta"],
 			"doors": ["principal", "salida"]
-<<<<<<< HEAD
 		},
-		        {
+		{
             "id": "principal",
             "name": "Entrada del edificio de ENTI",
             "description": "Hay un detector de COVID, que no funciona muy allá, secretaria y la sala de descanso donde te puedes comprar un café, comida 'sana' o tu propia comida si no eres un cerdo capitalista",
@@ -52,43 +51,24 @@
             "pickable": true
         },
         {
-            "id": "principal",
-            "name": "Entrada del edificio de ENTI",
-            "description": "Hay un detector de COVID, que no funciona muy allá, secretaria y la sala de descanso donde te puedes comprar un café, comida 'sana' o tu propia comida si no eres un cerdo capitalista",
-            "items": ["detector"],
-            "doors": ["parking", "hall", "secretaria", "saladescanso"]
             "id": "bicicleta",
             "name": "Bicicleta mugrosa",
             "description": "Algún alumno la abandonó",
             "pickable": false
         },
         {
-            "id": "hall",
-            "name": "Hall de ENTI",
-            "description": "El hall donde hay un árbol de Navidad en febrero",
-            "items": ["arbol"],
-            "doors": ["principal", "sala02", "escaleraspiso1"]
             "id": "detector",
             "name": "Detector de COVID",
             "description": "Detector de COVID que no funciona. En teoría detecta la temperatura",
             "pickable": false
         },
         {
-            "id": "salida",
-            "name": "Salida de ENTI",
-            "description": "No puedes salir, debes una cantidad ingente de dinero. Habertelo pensado...",
-            "items": ["carta", "verja"],
-            "doors": ["parking"]
             "id": "arbol",
             "name": "Árbol de Navidad",
             "description": "Árbol de Navidad que nadie quisó y nadie quiere quitar",
             "pickable": false
         },
         {
-            "id": "secretaria",
-            "name": "Secretaria de ENTI",
-            "description": "Secretaria donde se hace magia negra para que todos los números salgan. También se pueden vender órganos para pagar el curso. Además, tienen miembros de la mafia rusa que miran si has aparcado el coche en el Parking y te partan las piernas",
-            "items": ["bisturi", "diccionario"],
             "doors": ["principal"]
             "id": "carta",
             "name": "Carta de morosidad",
@@ -96,36 +76,10 @@
             "pickable": true
         },
         {
-            "id": "saladescanso",
-            "name": "Sala de descanso de ENTI",
-            "description": "Sala donde se puede venir en el descanso para comer o comprar comida. Hay una cosa rara en la pared que llama la atención",
-            "items": ["maquinacafe", "maquinacomida", "poster"],
-            "doors": ["principal"]
-        }
-    ],
-    "items": [
             "id": "verja",
             "name": "Verja de alambre púas",
             "description": "No puedes salir por esa puerta, tiene un candado con una combinación",
             "pickable": false
-        },
-        {
-            "id": "piedra",
-            "name": "Pedrusco mugroso",
-            "description": "Es una piedra sucia",
-            "id": "bisturi",
-            "name": "Bisturí de operaciones",
-            "description": "Instrumento que utilizan los de secretaria para que puedas pagar el curso, si es que no tienes el dinero...",
-            "pickable": true
-        },
-        {
-            "id": "bicicleta",
-            "name": "Bicicleta mugrosa",
-            "description": "Algún alumno la abandonó",
-            "id": "diccionario",
-            "name": "Diccionario español-ruso",
-            "description": "Diccionario para comunicarse con los matones de la mafia rusa",
-            "pickable": true
         },
         {
             "id": "maquinacafe",
@@ -202,169 +156,6 @@
             "id": "parkingsalida",
             "description": "Vuelta al parking desde la Salida",
             "rooms": ["salida", "parking"]
-        }
-=======
-		},        
-		{
-            "id": "principal",
-            "name": "Entrada del edificio de ENTI",
-            "description": "Hay un detector de COVID, que no funciona muy allá, secretaria y la sala de descanso donde te puedes comprar un café, comida 'sana' o tu propia comida si no eres un cerdo capitalista",
-            "items": ["detector"],
-            "doors": ["parking", "hall", "secretaria", "saladescanso"]
-        },
-        {
-            "id": "hall",
-            "name": "Hall de ENTI",
-            "description": "El hall donde hay un árbol de Navidad en febrero",
-            "items": ["arbol"],
-            "doors": ["principal", "sala02", "escaleraspiso1"]
-        },
-        {
-            "id": "salida",
-            "name": "Salida de ENTI",
-            "description": "No puedes salir, debes una cantidad ingente de dinero. Habertelo pensado...",
-            "items": ["carta", "verja"],
-            "doors": ["parking"]
-        },
-        {
-            "id": "secretaria",
-            "name": "Secretaria de ENTI",
-            "description": "Secretaria donde se hace magia negra para que todos los números salgan. También se pueden vender órganos para pagar el curso. Además, tienen miembros de la mafia rusa que miran si has aparcado el coche en el Parking y te partan las piernas",
-            "items": ["bisturi", "diccionario"],
-            "doors": ["principalsecretaria"]
-        },
-        {
-            "id": "saladescanso",
-            "name": "Sala de descanso de ENTI",
-            "description": "Sala donde se puede venir en el descanso para comer o comprar comida. Hay una cosa rara en la pared que llama la atención",
-            "items": ["maquinacafe", "maquinacomida", "poster"],
-            "doors": ["principalsaladescanso"]
-        }
-	],
-	"items": [
-		{
-			"id": "piedra",
-			"name": "Pedrusco mugroso",
-			"description": "Es una piedra sucia",
-			"pickable": true
-		},
-		{
-			"id": "bicicleta",
-			"name": "Bicicleta mugrosa",
-			"description": "Algún alumno la abandonó",
-			"pickable": false
-		},
-		{
-			"id": "detector",
-			"name": "Detector de COVID",
-			"description": "Detector de COVID que no funciona. En teoría detecta la temperatura",
-			"pickable": false
-		},
-		{
-			"id": "arbol",
-			"name": "Árbol de Navidad",
-			"description": "Árbol de Navidad que nadie quisó y nadie quiere quitar",
-			"pickable": false
-		},
-		{
-			"id": "carta",
-			"name": "Carta de morosidad",
-			"description": "En esta carta, ENTI te demanda por morosidad. Llevas más de 4 meses sin pagar la cuota mensual",
-			"pickable": true
-		},
-		{
-			"id": "verja",
-			"name": "Verja de alambre púas",
-			"description": "No puedes salir por esa puerta, tiene un candado con una combinación",
-			"pickable": false
-		},
-		{
-			"id": "bisturi",
-			"name": "Bisturí de operaciones",
-			"description": "Instrumento que utilizan los de secretaria para que puedas pagar el curso, si es que no tienes el dinero...",
-			"pickable": true
-		},
-		{
-			"id": "diccionario",
-			"name": "Diccionario español-ruso",
-			"description": "Diccionario para comunicarse con los matones de la mafia rusa",
-			"pickable": true
-		},
-		{
-			"id": "maquinacafe",
-			"name": "Máquina de cafes",
-			"description": "Puedes pedirte un capuccino de avellena por 0,27€",
-			"pickable": false
-		},
-		{
-			"id": "maquinacomida",
-			"name": "Máquina de comida",
-			"description": "Ideal para comprar algo que te pueda matar a largo plazo",
-			"pickable": false
-		},
-		{
-			"id": "poster",
-			"name": "Poster de Vaporeon",
-			"description": "Poster de un Vaporeon posando como una supermodelo. Típico del mejor Pokemon que el hombre puede conocer",
-			"pickable": true
 		}
-	],
-	"doors": [
-		{
-			"id": "principal",
-			"description": "Puerta de entrada a ENTI",
-			"rooms": ["parking", "principal"]
-		},
-		{
-			"id": "salida",
-			"description": "La salvación",
-			"rooms": ["parking", ""]
-		},
-		{
-			"id": "hall",
-			"description": "Puerto al pasillo principal de ENTI",
-			"rooms": ["princpal", "hall"]
-		},
-		{
-			"id": "secretaria",
-			"description": "La salvación",
-			"rooms": ["principal", "secretaria"]
-		},
-		{
-			"id": "saladescanso",
-			"description": "Puerta de entrada a ENTI",
-			"rooms": ["parking", "hall"]
-		},
-		{
-			"id": "sala02",
-			"description": "La salvación",
-			"rooms": ["hall", "sala02"]
-		}
-		{
-			"id": "escaleraspiso1",
-			"description": "La salvación",
-			"rooms": ["hall", "escaleraspiso1"]
-		},
-		{
-			"id": "parking",
-			"description": "Puerta de entrada a ENTI",
-			"rooms": ["principal", "parking"]
-		}
-		{
-			"id": "principalsaladescanso",
-			"description": "Vuelta a la sala principal",
-			"rooms": ["saladescanso", "principal"]
-		}
-		{
-			"id": "principalsecretaria",
-			"description": "Vuelta a la sala principal desde Secretaria",
-			"rooms": ["secretaria", "principal"]
-		},
-		{
-			"id": "parkingsalida",
-			"description": "Vuelta al parking desde la Salida",
-			"rooms": ["salida", "parking"]
-		}
->>>>>>> main
 	]
 }
