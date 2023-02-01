@@ -14,13 +14,18 @@
 			let items_picked = [];
 			let command = [];
 			
+			
+			function terminalOut (info) {
+				document.getElementById("terminal").innerHTML += info;
+			}
+			
 			function executeCommand () {
 				command = document.getElementById("commands").value.trim().split(" ");
 				document.getElementById("commands").value = "";
 				console.log(command);
 				
 				if (command.length == 0 || command == "") {
-					document.getElementById("terminal").innerHTML += "<p><strong>[!] ERROR:</strong> Escribe una instrucción</p>";
+					terminalOut("<p><strong>ERROR:</strong> Escribe una instrucción</p>");
 					return;
 				}
 				
@@ -36,11 +41,11 @@
 				switch (command) {
 					
 					case 'ver':
-						document.getElementById("terminal").innerHTML += "<p>" + game_data.rooms[current_room].description + "</p>";
+						terminalOut("<p>" + game_data.rooms[current_room].description + "</p>");
 						break;
 				
 					default:
-						document.getElementById("terminal").innerHTML += "<p><strong>[!] ERROR:</strong> Comando inválido</p>";
+						terminalOut("<p><strong>ERROR:</strong> Comando <strong>" + command + "</strong> inválido</p>");
 				}
 			}
 			
@@ -51,8 +56,8 @@
 			function game (data) {
 				game_data = data;
 				
-				document.getElementById("terminal").innerHTML = "<p><strong>¡Benvenido a ENTIerrame!</strong> El juego de terror definitivo.</p>";
-				document.getElementById("terminal").innerHTML += "<p>Te encuentras en " + data.rooms[current_room].name + ". ¿Qué quieres hacer?</p>";
+				terminalOut("<p><strong>¡Benvenido a ENTIerrame!</strong> El juego de terror definitivo.</p>");
+				terminalOut("<p>Te encuentras en " + data.rooms[current_room].name + ". ¿Qué quieres hacer?</p>");
 			}
 		
 			fetch("https://alejandroenti.github.io/game.json").then(response => response.json()).then(data => game(data));
