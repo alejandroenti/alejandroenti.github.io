@@ -16,7 +16,10 @@
 			
 			
 			function terminalOut (info) {
-				document.getElementById("terminal").innerHTML += info;
+				let terminal = document.getElementById("terminal");
+				
+				terminal.innerHTML += info;
+				terminal.scrollTop = terminal.scrollHeight;
 			}
 			
 			function executeCommand () {
