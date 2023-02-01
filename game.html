@@ -43,7 +43,17 @@
 					case 'ver':
 						terminalOut("<p>" + game_data.rooms[current_room].description + "</p>");
 						break;
-				
+						
+					case 'ir':
+						terminalOut("<p>Puedes ir a: ");
+						
+						for (let i = 0; i < game_data.rooms[current_room].doors.length; i++) {
+							terminalOut(game_data.rooms[current_room].doors[i] + " ");
+						}
+						
+						terminalOut("<p>");
+						break;
+						
 					default:
 						terminalOut("<p><strong>ERROR:</strong> Comando <strong>" + command + "</strong> no encontrado</p>");
 				}
