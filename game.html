@@ -19,7 +19,7 @@
 				document.getElementById("commands").value = "";
 				console.log(command);
 				
-				if (command.length == 0) {
+				if (command.length == 0 || command == "") {
 					document.getElementById("terminal").innerHTML += "<p><strong>[!] ERROR:</strong> Escribe una instrucción</p>";
 					return;
 				}
@@ -33,7 +33,15 @@
 			}
 			
 			function parseCommand (command) {
-				console.log("showOption function!");
+				switch (command) {
+					
+					case 'ver':
+						document.getElementById("terminal").innerHTML += "<p>" + data.rooms[current_room].description + "</p>";
+						break;
+				
+					default:
+						document.getElementById("terminal").innerHTML += "<p><strong>[!] ERROR:</strong> Comando inválido</p>";
+				}
 			}
 			
 			function parseInstruction (instruction ) {
