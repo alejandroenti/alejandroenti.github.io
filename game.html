@@ -15,7 +15,7 @@
 			let command = [];
 			
 			function executeCommand () {
-				command = document.getElementById("commands").value.split(" ");
+				command = document.getElementById("commands").value.trim().split(" ");
 				document.getElementById("commands").value = "";
 				console.log(command);
 				

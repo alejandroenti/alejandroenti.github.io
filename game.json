@@ -141,7 +141,7 @@
             "id": "sala02",
             "description": "La salvación",
             "rooms": ["hall", "sala02"]
-        }
+        },
         {
             "id": "escaleraspiso1",
             "description": "La salvación",
@@ -151,19 +151,19 @@
             "id": "parking",
             "description": "Puerta de entrada a ENTI",
             "rooms": ["principal", "parking"]
-        }
+        },
         {
-            "id": "principalsaladescanso",
+            "id": "principal2",
             "description": "Vuelta a la sala principal",
             "rooms": ["saladescanso", "principal"]
-        }
+        },
         {
-            "id": "principalsecretaria",
+            "id": "principal3",
             "description": "Vuelta a la sala principal desde Secretaria",
             "rooms": ["secretaria", "principal"]
         },
         {
-            "id": "parkingsalida",
+            "id": "parking2",
             "description": "Vuelta al parking desde la Salida",
             "rooms": ["salida", "parking"]
 		}
