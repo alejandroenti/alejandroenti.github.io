@@ -22,8 +22,7 @@
 				terminal.scrollTop = terminal.scrollHeight;
 			}
 			
-			function findDoorId (door) {
-				let door_id = 0;
+			function findDoorNumber (door) {
 				let doors_num = game_data.doors.length;
 				
 				for (let i = 0; i < doors_num; i++) {
@@ -31,10 +30,10 @@
 						return i;
 					}
 				}
+				return -1;
 			}
 			
-			function findRoomId (room) {
-				let room_id = 0;
+			function findRoomNumber (room) {
 				let rooms_num = game_data.rooms.length;
 				
 				for (let i = 0; i < rooms_num; i++) {
@@ -42,6 +41,8 @@
 						return i;
 					}
 				}
+				
+				return -1;
 			}
 			
 			function executeCommand () {
@@ -82,6 +83,10 @@
 						
 						break;
 						
+					case 'coger':
+					
+						break;
+						
 					default:
 						terminalOut("<p><strong>ERROR:</strong> Comando <strong>" + command + "</strong> no encontrado</p>");
 				}
@@ -96,17 +101,21 @@
 						
 					case 'ir':
 						
-						let door = instruction[1];
-						let door_id = findDoorId(door);
-						let room1_id = findRoomId(game_data.doors[door_id].rooms[0]);
-						let room2_id = findRoomId(game_data.doors[door_id].rooms[1]);
+						let door_number = findDoorNumber(instruction[1]);
+						
+						if (door_number < 0) {
+							console.log("Puerta errónea");
+							return;
+						}
+						
+						let room_number = findRoomNumber(game_data.doors[door_number].rooms[0]);
 						let next_room_name = "";
 						
 						if (room1_id == current_room) {
-							current_room = room2_id;
+							current_room = findRoomNumber(game_data.doors[door_number].rooms[1]);
 						}
 						else {
-							current_room = room1_id;
+							current_room = room_number;
 						}
 						
 						next_room_name = game_data.rooms[current_room].name
@@ -115,8 +124,12 @@
 						
 						break;
 						
+					case 'coger':
+					
+						break;
+						
 					default:
-						terminalOut("<p><strong>ERROR:</strong> Comando <strong>" + command + "</strong> no encontrado</p>");
+						terminalOut("<p><strong>ERROR:</strong> Comando <strong>" + instruction[0] + "</strong> no encontrado</p>");
 				}
 			}
 		
