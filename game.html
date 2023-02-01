@@ -19,19 +19,24 @@
 				document.getElementById("commands").value = "";
 				console.log(command);
 				
+				if (command.length == 0) {
+					document.getElementById("terminal").innerHTML += "<p><strong>[!] ERROR:</strong> Escribe una instrucción</p>";
+					return;
+				}
+				
 				if (command.length == 1) {
-					showOptions();
+					parseCommand(command[0]);
 				}
 				else {
-					makeAction();
+					parseInstruction(command);
 				}
 			}
 			
-			function showOptions () {
+			function parseCommand (command) {
 				console.log("showOption function!");
 			}
 			
-			function makeAction () {
+			function parseInstruction (instruction ) {
 				console.log("makeAction function!");
 			}
 		

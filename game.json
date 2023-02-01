@@ -116,7 +116,6 @@
             "id": "principal",
             "description": "Puerta de entrada a ENTI",
             "rooms": ["parking", "hall"]
-            "rooms": ["parking", "principal"]
         },
         {
             "id": "salida",
