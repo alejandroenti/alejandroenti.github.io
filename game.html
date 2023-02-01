@@ -45,13 +45,16 @@
 						break;
 						
 					case 'ir':
-						terminalOut("<p>Puedes ir a: ");
 						
-						for (let i = 0; i < game_data.rooms[current_room].doors.length; i++) {
-							terminalOut(game_data.rooms[current_room].doors[i] + " ");
+						let doors = "";
+						let doors_num = game_data.rooms[current_room].doors.length;
+						
+						for (let i = 0; i < doors_num; i++) {
+							doors += game_data.rooms[current_room].doors[i] + " ";
 						}
 						
-						terminalOut("<p>");
+						terminalOut("<p>Puedes ir a: " + doors + "</p>");
+						
 						break;
 						
 					default:
