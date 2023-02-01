@@ -22,6 +22,28 @@
 				terminal.scrollTop = terminal.scrollHeight;
 			}
 			
+			function findDoorId (door) {
+				let door_id = 0;
+				let doors_num = game_data.doors.length;
+				
+				for (let i = 0; i < doors_num; i++) {
+					if (game_data.doors[i].id == door) {
+						return i;
+					}
+				}
+			}
+			
+			function findRoomId (room) {
+				let room_id = 0;
+				let rooms_num = game_data.rooms.length;
+				
+				for let i = 0; i < rooms_num; i++) {
+					if (game_data.rooms[i].id == room) {
+						return i;
+					}
+				}
+			}
+			
 			function executeCommand () {
 				command = document.getElementById("commands").value.trim().split(" ");
 				document.getElementById("commands").value = "";
@@ -66,7 +88,36 @@
 			}
 			
 			function parseInstruction (instruction ) {
-				console.log("makeAction function!");
+				switch (instruction[0]) {
+					
+					case 'ver':
+						
+						break;
+						
+					case 'ir':
+						
+						let door = instruction[1];
+						let door_id = findDoorId(door);
+						let room1_id = findRoomId(game_data.doors[door_id].rooms[0]);
+						let room2_id = findRoomId(game_data.doors[door_id].rooms[1]);
+						let next_room_name = "";
+						
+						if (room1_id == current_room) {
+							current_room = room2_id;
+						}
+						else {
+							current_room = room1_id;
+						}
+						
+						next_room_name = game_data.rooms[current_room].name
+						
+						terminalOut("<p>Cambiando de habitación a " + next_room_name + "</p>");
+						
+						break;
+						
+					default:
+						terminalOut("<p><strong>ERROR:</strong> Comando <strong>" + command + "</strong> no encontrado</p>");
+				}
 			}
 		
 			function game (data) {
