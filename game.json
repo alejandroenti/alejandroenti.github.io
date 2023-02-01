@@ -69,7 +69,6 @@
             "pickable": false
         },
         {
-            "doors": ["principal"]
             "id": "carta",
             "name": "Carta de morosidad",
             "description": "En esta carta, ENTI te demanda por morosidad. Llevas más de 4 meses sin pagar la cuota mensual",
@@ -79,6 +78,18 @@
             "id": "verja",
             "name": "Verja de alambre púas",
             "description": "No puedes salir por esa puerta, tiene un candado con una combinación",
+            "pickable": false
+        },
+		{
+            "id": "bisturi",
+            "name": "Bisturí de cirujano",
+            "description": "Herramienta con la que te hacen pagar si no tienes dinero",
+            "pickable": false
+        },
+		{
+            "id": "diccionario",
+            "name": "Diccionario de español - ruso",
+            "description": "Utilizado para traducir las órdenes y que se partan piernas",
             "pickable": false
         },
         {
@@ -114,7 +125,7 @@
         },
         {
             "id": "hall",
-            "description": "Puerto al pasillo principal de ENTI",
+            "description": "Puerta al pasillo principal de ENTI",
             "rooms": ["princpal", "hall"]
         },
         {

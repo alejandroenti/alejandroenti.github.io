@@ -14,9 +14,25 @@
 			let items_picked = [];
 			let command = [];
 			
-			function execute_command () {
+			function executeCommand () {
 				command = document.getElementById("commands").value.split(" ");
+				document.getElementById("commands").value = "";
 				console.log(command);
+				
+				if (command.length == 1) {
+					showOptions();
+				}
+				else {
+					makeAction();
+				}
+			}
+			
+			function showOptions () {
+				console.log("showOption function!");
+			}
+			
+			function makeAction () {
+				console.log("makeAction function!");
 			}
 		
 			function game (data) {
@@ -49,7 +65,7 @@
 					<div id="terminal">
 					</div>
 					<input type="text" name="commands" id="commands"/>
-					<input type="submit" value="Ejecutar" id="submit-command" onclick="execute_command(); return false;"/>
+					<input type="submit" value="Ejecutar" id="submit-command" onclick="executeCommand(); return false;"/>
 				</form>
 			</article>
 			<aside>
