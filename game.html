@@ -176,7 +176,7 @@
 						
 						for (let i = 0; i < rooms_items; i++) {
 							if (game_data.rooms[current_room].items[i].id == instruction[1]) {
-								game_data.rooms[current_room].items.slice(i, 1);
+								game_data.rooms[current_room].items.splice(i, 1);
 							}
 						}
 						
