@@ -103,6 +103,8 @@
 						for (let i = 0; i < items_num; i++) {
 							items += game_data.rooms[current_room].items[i] + " ";
 						}
+						
+						terminalOut("<p>Los items en la sala son: " + items + "</p>");
 					
 						break;
 						
@@ -156,19 +158,19 @@
 						
 					case 'coger':
 						
-						item_number = findItemNumber(instruction[1]);
+						let item_num = findItemNumber(instruction[1]);
 						
-						if (item_number < 0) {
+						if (item_num < 0) {
 							console.log("Item errónea");
 							return;
 						}
 						
-						if (game_data.items[item_number].pickable === false) {
+						if (game_data.items[item_num].pickable == false) {
 							terminalOut("<p>El objeto<strong> " + instruction[1] + "</strong> no puede ser cogido</p>");
 							return;
 						}
 						
-						items_picked.push(game_data.items[item_number]);
+						items_picked.push(game_data.items[item_num]);
 						
 						let room_items = game_data.rooms[current_room].items.length;
 						
