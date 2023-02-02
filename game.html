@@ -45,6 +45,18 @@
 				return -1;
 			}
 			
+			function findItemNumber (item) {
+				let items_num = game_data.items.length;
+				
+				for (let i = 0; i < items_num; i++) {
+					if (game_data.items[i].id == item) {
+						return i;
+					}
+				}
+				
+				return -1;
+			}
+			
 			function executeCommand () {
 				command = document.getElementById("commands").value.trim().split(" ");
 				document.getElementById("commands").value = "";
@@ -84,6 +96,13 @@
 						break;
 						
 					case 'coger':
+						
+						let items = "";
+						let items_num = game_data.rooms[current_room].items.length;
+						
+						for (let i = 0; i < items_num; i++) {
+							items += game_data.rooms[current_room].items[i] + " ";
+						}
 					
 						break;
 						
@@ -96,6 +115,17 @@
 				switch (instruction[0]) {
 					
 					case 'ver':
+					
+						let item_number = findItemNumber(instruction[1]);
+						
+						if (item_number < 0) {
+							console.log("Item errónea");
+							return;
+						}
+						
+						let item_description = game_data.items[item_number].description;
+						
+						terminalOut("<p><strong>" + instruction[1] + ":</strong>" + item_description + "</p>");
 						
 						break;
 						
