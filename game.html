@@ -175,6 +175,7 @@
 									return;
 								}
 								
+								item_num = game_data.rooms[current_room].items.indexOf(item);								
 								items_picked.push(item);								
 								game_data.rooms[current_room].items.splice(item_num, 1);
 								
