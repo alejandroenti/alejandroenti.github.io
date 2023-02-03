@@ -160,7 +160,7 @@
 						
 						game_data.rooms[current_room].items.forEach(function (item) {
 							if (item == instruction[1]) {
-								items_picked.push(item);
+							
 								let item_num = game_data.rooms[current_room].items.indexOf(item);
 								
 								if (item_num < 0) {
@@ -175,6 +175,7 @@
 									return;
 								}
 								
+								items_picked.push(item);								
 								game_data.rooms[current_room].items.splice(item_num, 1);
 							}
 							
