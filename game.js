@@ -169,6 +169,7 @@ function parseInstruction (instruction ) {
 					game_data.rooms[current_room].items.splice(item_num, 1);
 					
 					terminalOut("<p>El objeto<strong> " + item + "</strong> ha sido añadido a tu inventario</p>");
+					return;
 				}
 			});
 		
