@@ -168,6 +168,13 @@
 									return;
 								}
 								
+								item_num = game_data.items.indexOf(item);
+								
+								if (game_data.items[item_num].pickable == false) {
+									terminalOut("<p>El objeto<strong> " + item + "</strong> no puede ser cogido</p>");
+									return;
+								}
+								
 								game_data.rooms[current_room].items.splice(item_num, 1);
 							}
 							
