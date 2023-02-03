@@ -177,10 +177,11 @@
 								
 								items_picked.push(item);								
 								game_data.rooms[current_room].items.splice(item_num, 1);
-								break;
+	
 							}
 							
-							terminalOut("<p>El objeto<strong> " + item + "</strong> ha sido añadido a tu inventario</p>");						
+							terminalOut("<p>El objeto<strong> " + item + "</strong> ha sido añadido a tu inventario</p>");
+							break;							
 						});
 					
 						break;
