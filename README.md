@@ -18,3 +18,9 @@ Aquí almacenaremos la página web estática de la asignatura así como algunos 
 - [ ] Aprender CSS
 - [ ] Aprender JavaScript
 - [x] Aprender MySQL
+
+## Preguntas actividad final
+
+- ***¿Qué es HTML? ¿CSS? ¿Javascript?***
+- ***¿Qué es el formato Markdown?***
+- ***¿Qué es el formato JSON? ¿Cómo se convierte un objeto a JSON? ¿Y JSON a un objeto?***
