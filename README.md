@@ -32,3 +32,5 @@ Aquí almacenaremos la página web estática de la asignatura así como algunos 
 
 	El formato **Markdown** es un lenguaje de marcas que nos permite la realización de textos formateados usando un editor cualquiera de texto. De esta forma podemos crear documentos como este Readme.me, con negrita, parráfos, listas, etc.
 - ***¿Qué es el formato JSON? ¿Cómo se convierte un objeto a JSON? ¿Y JSON a un objeto?***
+
+	El formato **JSON** es estándar de intercambio de datos que es legible para los humanos. En él se almacena y tramiste información mediante el par *clave - valor*. Para **convertir un objecto a JSON** debemos aplicar el método *stringify* del objeto *JSON* para poderlo enviar por la red. En cambio, para **convertir un JSON en un objeto** debemos primero recibir el JSON mediante una promesa y entonces aplicarle el método *json()* por el que pasará a ser un objeto.
