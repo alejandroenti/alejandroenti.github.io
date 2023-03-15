@@ -1,6 +1,34 @@
+main {
+	flex-direction: column;
+}
+
+h2 {
+	text-align: center;
+	font-size: 48px;
+}
+
+form {
+	width: 60%;
+	padding: 0 0 0 20%;
+}
+
 #terminal {
 	border: 2px solid black;
 	min-width: 240px;
-	height: 120px;
+	height: 305px;
 	overflow: scroll;
+	background-color: black;
+	background-image: radial-gradient(rgba(0, 150, 0, 0.75), black 120%);
+	margin: 0;
+	overflow: hidden;
+	padding: 3%;
+	color: white;
+	text-shadow: 0 0 5px #C8C8C8;
+	border-radius: 10px;
+}
+
+#commands {
+	background-color: black;
+	background-image: radial-gradient(rgba(0, 150, 0, 0.75), black 120%);
+	width: 99.4%;
 }
