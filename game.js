@@ -195,7 +195,7 @@ function parseInstruction (instruction) {
 
 			let item_inventory_num = findItemNumber(instruction[1]);
 			
-			if (item_number < 0) {
+			if (item_inventory_num < 0) {
 				terminalOut("<p>El objeto<strong> " + instruction[1] + "</strong> no se encuentra en tu inventario</p>");
 				return;
 			}
