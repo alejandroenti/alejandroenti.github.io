@@ -157,9 +157,9 @@ function parseInstruction (instruction ) {
 						return;
 					}
 					console.log("El item es " + item);
-					/*
-					item_num = game_data.items.indexOf(item);
 					
+					item_num = game_data.items.indexOf(item);
+					/*
 					if (game_data.items[item_num].pickable == false) {
 						terminalOut("<p>El objeto<strong> " + item + "</strong> no puede ser cogido</p>");
 						return;
