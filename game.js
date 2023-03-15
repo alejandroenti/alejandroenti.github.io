@@ -98,14 +98,15 @@ function parseCommand (command) {
 			break;
 			
 		case 'inventario':
-			let items = "";
-			let items_num = items_picked.length;
+		
+			let items_inventory = "";
+			let items_num_inventory = items_picked.length;
 			
-			for (let i = 0; i < items_num; i++) {
-				items += items_picked[i] + " ";
+			for (let i = 0; i < items_num_inventory; i++) {
+				items_inventory += items_picked[i] + " ";
 			}
 			
-			terminalOut("<p>El inventario que tienes es: " + items + "</p>");
+			terminalOut("<p>El inventario que tienes es: " + items_inventory + "</p>");
 		
 			break;
 			
