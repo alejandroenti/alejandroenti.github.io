@@ -156,9 +156,9 @@ function parseInstruction (instruction ) {
 						console.log("Error al borrar el item de la habitación");
 						return;
 					}
-					console.log("El item es " + item);
 					
 					item_num = game_data.items.indexOf(item);
+					console.log(game_data.items[item_num]);
 					/*
 					if (game_data.items[item_num].pickable == false) {
 						terminalOut("<p>El objeto<strong> " + item + "</strong> no puede ser cogido</p>");
