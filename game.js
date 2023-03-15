@@ -200,7 +200,7 @@ function parseInstruction (instruction) {
 				return;
 			}
 			
-			let item_inventory_description = game_data.items[item_number].description;
+			let item_inventory_description = game_data.items[item_inventory_num].description;
 			
 			terminalOut("<p><strong>" + instruction[1] + ":</strong> " + item_inventory_description + "</p>");
 			
