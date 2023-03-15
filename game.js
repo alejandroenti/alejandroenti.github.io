@@ -157,7 +157,7 @@ function parseInstruction (instruction ) {
 						return;
 					}
 					
-					item_num = game_data.items.indexOf(item);
+					item_num = findItemNumber(item);
 					console.log(game_data.items[item_num]);
 					/*
 					if (game_data.items[item_num].pickable == false) {
