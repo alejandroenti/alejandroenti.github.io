@@ -46,6 +46,18 @@ function findItemNumber (item) {
 	return -1;
 }
 
+function findItemNumberRoom (item, room) {
+	let items_num = game_data.rooms[room].items.length;
+	
+	for (let i = 0; i < items_num; i++) {
+		if (gae_data.rooms[room].items[i].id == item) {
+			return i;
+		}
+	}
+	
+	return -1;
+}
+
 function executeCommand () {
 	command = document.getElementById("commands").value.trim().split(" ");
 	document.getElementById("commands").value = "";
@@ -159,15 +171,13 @@ function parseInstruction (instruction ) {
 					
 					item_num = findItemNumber(item);
 					console.log(game_data.items[item_num]);
-					/*
+
 					if (game_data.items[item_num].pickable == false) {
 						terminalOut("<p>El objeto<strong> " + item + "</strong> no puede ser cogido</p>");
 						return;
 					}
 					
-					item_num = game_data.rooms[current_room].items.indexOf(item);								
-					//items_picked.push(item);
-					console.log(item);
+					item_num = findItemNumberRoom(item, current_room);
 					game_data.rooms[current_room].items.splice(item_num, 1);
 					
 					terminalOut("<p>El objeto<strong> " + item + "</strong> ha sido añadido a tu inventario</p>");
