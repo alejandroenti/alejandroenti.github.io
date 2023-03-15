@@ -178,7 +178,8 @@ function parseInstruction (instruction ) {
 					}
 					
 					item_num = findItemNumberRoom(item, current_room);
-					game_data.rooms[current_room].items.splice(item_num, 1);
+					console.log(item_num);
+					items_picked.push(game_data.rooms[current_room].items.splice(item_num, 1));
 					
 					terminalOut("<p>El objeto<strong> " + item + "</strong> ha sido añadido a tu inventario</p>");
 					return;
