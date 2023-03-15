@@ -156,7 +156,8 @@ function parseInstruction (instruction ) {
 						console.log("Error al borrar el item de la habitación");
 						return;
 					}
-					
+					console.log("El item es " + item);
+					/*
 					item_num = game_data.items.indexOf(item);
 					
 					if (game_data.items[item_num].pickable == false) {
@@ -170,7 +171,7 @@ function parseInstruction (instruction ) {
 					game_data.rooms[current_room].items.splice(item_num, 1);
 					
 					terminalOut("<p>El objeto<strong> " + item + "</strong> ha sido añadido a tu inventario</p>");
-					return;
+					return;*/
 				}
 			});
 		
