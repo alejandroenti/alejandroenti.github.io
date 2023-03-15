@@ -50,7 +50,7 @@ function findItemNumberRoom (item, room) {
 	let items_num = game_data.rooms[room].items.length;
 	
 	for (let i = 0; i < items_num; i++) {
-		if (gae_data.rooms[room].items[i].id == item) {
+		if (game_data.rooms[room].items[i].id == item) {
 			return i;
 		}
 	}
