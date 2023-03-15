@@ -12,6 +12,10 @@ form {
 	padding: 0 0 0 20%;
 }
 
+#input-player {
+	display: flex;
+}
+
 #terminal {
 	border: 2px solid black;
 	min-width: 240px;
@@ -30,5 +34,26 @@ form {
 #commands {
 	background-color: black;
 	background-image: radial-gradient(rgba(0, 150, 0, 0.75), black 120%);
-	width: 99.4%;
+	width: 100%;
+	border-radius: 10px;
+	color: white;
+	font-size: 14px;
+}
+
+#submit-command {
+	background: black;
+	color: white;
+	border: 1px solid #eee;
+	border-radius: 20px;
+	box-shadow: 5px 5px 5px #eee;
+	text-shadow: none;
+}
+
+#submit-command:hover {
+	background: white;
+	color: black;
+	border: 1px solid #eee;
+	border-radius: 20px;
+	box-shadow: 5px 5px 5px #eee;
+	text-shadow: none;
 }
