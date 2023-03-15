@@ -115,7 +115,7 @@ function parseCommand (command) {
 	}
 }
 
-function parseInstruction (instruction ) {
+function parseInstruction (instruction) {
 	switch (instruction[0]) {
 		
 		case 'ver':
@@ -123,7 +123,7 @@ function parseInstruction (instruction ) {
 			let item_number = findItemNumber(instruction[1]);
 			
 			if (item_number < 0) {
-				console.log("Item errónea");
+				terminalOut("<p>El objeto<strong> " + instruction[1] + "</strong> no se encuentra en la habitación</p>");
 				return;
 			}
 			
@@ -189,6 +189,21 @@ function parseInstruction (instruction ) {
 				}
 			});
 		
+			break;
+			
+		case 'inventario':
+
+			let item_inventory_num = findItemNumber(instruction[1]);
+			
+			if (item_number < 0) {
+				terminalOut("<p>El objeto<strong> " + instruction[1] + "</strong> no se encuentra en tu inventario</p>");
+				return;
+			}
+			
+			let item_inventory_description = game_data.items[item_number].description;
+			
+			terminalOut("<p><strong>" + instruction[1] + ":</strong> " + item_inventory_description + "</p>");
+			
 			break;
 			
 		default:
