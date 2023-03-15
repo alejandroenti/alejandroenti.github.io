@@ -46,18 +46,6 @@ function findItemNumber (item) {
 	return -1;
 }
 
-function findItemNumberRoom (item, room) {
-	let items_num = game_data.rooms[room].items.length;
-	
-	for (let i = 0; i < items_num; i++) {
-		if (game_data.rooms[room].items[i].id == item) {
-			return i;
-		}
-	}
-	
-	return -1;
-}
-
 function executeCommand () {
 	command = document.getElementById("commands").value.trim().split(" ");
 	document.getElementById("commands").value = "";
@@ -177,9 +165,11 @@ function parseInstruction (instruction ) {
 						return;
 					}
 					
-					item_num = findItemNumberRoom(item, current_room);
-					console.log(item_num);
-					items_picked.push(game_data.rooms[current_room].items.splice(item_num, 1));
+					game_data.rooms[current_room].items.forEach(item => {
+						if (item == instruction[1]) {
+							items_picked.push(game_data.rooms[current_room].items.splice(item_num, 1));
+						}
+					});
 					
 					terminalOut("<p>El objeto<strong> " + item + "</strong> ha sido añadido a tu inventario</p>");
 					return;
