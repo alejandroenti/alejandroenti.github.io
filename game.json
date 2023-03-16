@@ -41,6 +41,27 @@
             "description": "Sala donde se puede venir en el descanso para comer o comprar comida. Hay una cosa rara en la pared que llama la atención",
             "items": ["maquinacafe", "maquinacomida", "poster"],
             "doors": ["principalsaladescanso"]
+        },
+        {
+            "id": "sala02",
+            "name": "Aula 02",
+            "description": "Aula donde se imparten las clases de DAM-VIOD",
+            "items": ["ordenador"],
+            "doors": ["sala02"]
+        },
+		{
+            "id": "salida",
+            "name": "Salida",
+            "description": "Estás en frente de la verja pero no puedes salir, eres masoquista y te quedas dentro",
+            "items": [""],
+            "doors": ["salida"]
+        },
+		{
+            "id": "escaleraspiso1",
+            "name": "Escaleras al piso 1",
+            "description": "Las escaleras al infierno, lleno de Vaporeons y Grados",
+            "items": [""],
+            "doors": ["escaleraspiso1"]
         }
     ],
     "items": [
@@ -109,6 +130,12 @@
             "name": "Poster de Vaporeon",
             "description": "Poster de un Vaporeon posando como una supermodelo. Típico del mejor Pokemon que el hombre puede conocer",
             "pickable": true
+        },
+        {
+            "id": "ordenador",
+            "name": "Ordenador",
+            "description": "Uno de esos aparatos a los que les hacen un reset y van peor que antes",
+            "pickable": false
         }
     ],
     "doors": [
@@ -120,7 +147,7 @@
         {
             "id": "salida",
             "description": "La salvación",
-            "rooms": ["parking", ""]
+            "rooms": ["parking", "salida"]
         },
         {
             "id": "hall",
@@ -161,11 +188,6 @@
             "id": "principal3",
             "description": "Vuelta a la sala principal desde Secretaria",
             "rooms": ["secretaria", "principal"]
-        },
-        {
-            "id": "parking2",
-            "description": "Vuelta al parking desde la Salida",
-            "rooms": ["salida", "parking"]
-		}
+        }		
 	]
 }
