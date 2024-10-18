@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercis HTML 1</title>
+</head>
+<body>
+    <h1>Exercicis HTML 1</h1>
+    <section>
+        <ul>
+            <li><a href="exercici1.html">Exercici 1 - Elements de Text</a></li>
+            <li><a href="exercici2.html">Exercici 2 - Llistes</a></li>
+            <li><a href="exercici3.html">Exercici 3 - Enllaços</a></li>
+            <li><a href="exercici4.html">Exercici 4 - Imatges</a></li>
+        </ul>
+    </section>
+</body>
+</html>
