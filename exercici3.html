@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercici 3</title>
+</head>
+<body>
+    <h1>Exercici 3 - Enllaços</h1>
+    <section id="section-0">
+        <h2>Enllaços interns</h2>
+        <h3>Índex</h3>
+        <ul>
+            <li><a href="#section-0">Enllaços interns</a></li>
+            <li><a href="#section-1">Enllaç a un mail</a></li>
+            <li><a href="#section-2">Enllaços externos amb atributs</a></li>
+            <li><a href="#section-3">Enllaços a documents</a></li>
+        </ul>
+    </section>
+    <section id="section-1">
+        <h2>Enllaç a un mail</h2>
+        <p>Enllaç per enviar un correu electrònic a <a href="mailto:alexxlh.25@gmail.com">Alejandro López</a></p>
+    </section>
+    <section id="section-2">
+        <h2>Enllaços externos amb atributs</h2>
+        <p>Enllaços a diferents pàgines web:</p>
+        <ul>
+            <li><p>Aquest enllaç té l'atribut <em>target</em> amb el valor <strong>_self</strong>. Això l'obre al mateix context on ens trobem ara. Aquest és el <strong>comportament per defecte</strong> - <a href="https://es.wikipedia.org/wiki/Wikipedia:Portada" target="_self" rel="noopener noreferrer">Wikipedia en castellà</a></p></li>
+            <li><p>Aquest enllaç té l'atribut <em>target</em> amb el valor <strong>_top</strong>. Això l'obre al context més alt de navegació (si no hi ha <em>parent</em> es comporta com <strong>_self</strong>) - <a href="https://www.iesesteveterradas.cat/" target="_top" rel="noopener noreferrer">Web del centre</a></p></li>
+            <li><p>Aquest enllaç té l'atribut <em>target</em> amb el valor <strong>_parent</strong>. Això l'obre al context de nevegació del pare (<em>parent</em>). Si no hi ha <em>parent</em> es comporta com <strong>_self</strong> - <a href="https://www.youtube.com/" target="_parent" rel="noopener noreferrer">Youtube</a></p></li>
+            <li><p>Aquest enllaç té l'atribut <em>target</em> amb el valor <strong>_blank</strong>. Això l'obre a un nou context de navegació, usualment <strong>una pestanya nova</strong> - <a href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">Chat GPT</a></p></li>
+        </ul>
+    </section>
+    <section id="section-3">
+        <h2>Enllaços amb documents</h2>
+        <p>Enllaç al PDF del meu <a href="https://drive.google.com/file/d/1wLZ80PKJLw-GZXcjPv9Z9rwENgrrDy8P/view?usp=drive_link" target="_blank" rel="noopener noreferrer">currículum en anglès</a></p>
+    </section>
+</body>
+</html>
